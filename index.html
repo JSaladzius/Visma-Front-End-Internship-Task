@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>To Do App</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <header id="logoContainer">
+            <div id="logo">
+                <h1 id="to">"TO </h1>
+                <h1 id="do"> DO"</h1>
+            </div>
+        </header>
+
+        <form action="">
+            <label for="discription">Discription</label>
+            <input type="text" name="discription" id="inputDiscription" maxlength="160" required>
+            <label for="deadline">Deadline</label>
+            <input type="datetime-local" name="deadline" id="inputDate" value="2023-01-01T00:00">
+            <button type="submit" id="addButton">Add</button>
+            <select name="filter" id="filter">
+                <option value="Newest at the top">Newest at the top</option>
+                <option value="Least time left first">Least time left</option>
+                <option value="Recently completed on the top">Recently completed</option>
+            </select>
+        </form>
+        <div id="myList">
+            <!-- existing item list goe's here -->
+        </div>
+
+    </div>
+
+</body>
+
+</html>
